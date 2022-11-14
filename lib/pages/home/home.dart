@@ -13,6 +13,7 @@ import '../gesture_detector/gesture_detector.dart';
 import '../icon/icon.dart';
 import '../text_field/text_field.dart';
 import '../dialog/dialog.dart';
+import '../image/image.dart';
 
 Widget _listItem(
   BuildContext context,
@@ -42,8 +43,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Notes'),
-        actions: const <Widget>[
-          DebugLines()
+        actions: <Widget>[
+          const DebugLines(),
+          IconButton(
+            onPressed: (){},
+            icon: const Icon(Icons.looks_3_outlined)
+          )
         ],
       ),
       backgroundColor: Colors.white,
@@ -148,6 +153,14 @@ class HomePage extends StatelessWidget {
             'Widget',
             Icons.fit_screen_outlined,
             const DialogPage()
+          ),
+
+          _listItem(
+            context,
+            'Image',
+            'Widget',
+            Icons.image_outlined,
+            const ImagePage()
           ),
 
         ]).toList(),
