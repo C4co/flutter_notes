@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notes/pages/conditional_rendering/conditional_rendering.dart';
+import 'package:flutter_notes/pages/http_request/http_request.dart';
 import 'package:flutter_notes/pages/stateful_widget/stateful_widget.dart';
+import 'package:flutter/foundation.dart';
 
 import '../../widgets/debug_lines.dart';
 
@@ -43,12 +46,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Notes'),
-        actions: <Widget>[
-          const DebugLines(),
-          IconButton(
-            onPressed: (){},
-            icon: const Icon(Icons.looks_3_outlined)
-          )
+        actions: const <Widget>[
+          if(kDebugMode) DebugLines(),
         ],
       ),
       backgroundColor: Colors.white,
@@ -132,9 +131,25 @@ class HomePage extends StatelessWidget {
           _listItem(
             context,
             'Stateful Widget',
-            'Structure',
+            'State',
             Icons.move_up_outlined,
             const SfWidget()
+          ),
+
+          _listItem(
+            context,
+            'HTTP request',
+            'State',
+            Icons.http,
+            const HttpRequesPage()
+          ),
+
+          _listItem(
+            context,
+            'Conditional Rendering',
+            'State',
+            Icons.cached,
+            const ConditionalRenderingPage()
           ),
 
           // widget
