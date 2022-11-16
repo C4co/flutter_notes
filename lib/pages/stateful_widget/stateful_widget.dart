@@ -34,20 +34,25 @@ class _SfWidgetState extends State<SfWidget> {
 
             const SizedBox(height: 30),
 
-            ElevatedButton(
-              onPressed: (){
-                _incrementCounter();
-              },
-              child: const Text("Increment")
-            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(
+                  onPressed: (){
+                    _incrementCounter();
+                  },
+                  child: const Text("Increment")
+                ),
 
-            const SizedBox(height: 10),
+                const SizedBox(width: 10),
 
-            ElevatedButton(
-              onPressed: (){
-                _decrementCounter();
-              },
-              child: const Text('Decrement')
+                ElevatedButton(
+                  onPressed: (){
+                    _decrementCounter();
+                  },
+                  child: const Text('Decrement')
+                ),
+              ],
             )
           ],
         ),
