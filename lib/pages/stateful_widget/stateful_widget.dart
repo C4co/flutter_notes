@@ -38,6 +38,7 @@ class _SfWidgetState extends State<SfWidget> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
+                  key: const Key('increment-button'),
                   onPressed: (){
                     _incrementCounter();
                   },
@@ -47,6 +48,7 @@ class _SfWidgetState extends State<SfWidget> {
                 const SizedBox(width: 10),
 
                 ElevatedButton(
+                  key: const Key('decrement-button'),
                   onPressed: (){
                     _decrementCounter();
                   },
