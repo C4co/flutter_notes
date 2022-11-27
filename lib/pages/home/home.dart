@@ -17,6 +17,7 @@ import '../icon/icon.dart';
 import '../text_field/text_field.dart';
 import '../dialog/dialog.dart';
 import '../image/image.dart';
+import '../widget_props/widget_props.dart';
 
 Widget _listItem(
   BuildContext context,
@@ -150,6 +151,14 @@ class HomePage extends StatelessWidget {
             'State',
             Icons.cached,
             const ConditionalRenderingPage()
+          ),
+
+          _listItem(
+            context,
+            'Widget Props',
+            'State',
+            Icons.star,
+            const WidgetProps()
           ),
 
           // widget
