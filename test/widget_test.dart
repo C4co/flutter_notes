@@ -1,8 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_notes/pages/testable/testable.dart';
+import 'package:flutter_notes/modules/behavior/testable.dart';
 
 void main() {
-
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(
       const MyWidget(
@@ -14,5 +13,4 @@ void main() {
     expect(find.text('widget title'), findsOneWidget);
     expect(find.text('widget message'), findsOneWidget);
   });
-
 }

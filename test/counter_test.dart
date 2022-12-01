@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_notes/pages/stateful_widget/stateful_widget.dart';
+import 'package:flutter_notes/modules/behavior/stateful_widget.dart';
 
 void main() {
-
   testWidgets('Test ', (tester) async {
     await tester.pumpWidget(
       const MaterialApp(
@@ -13,8 +12,8 @@ void main() {
       )
     );
 
-    var incrementButton =  find.byKey(const Key('increment-button'));
-    var decrementButton =  find.byKey(const Key('decrement-button'));
+    var incrementButton = find.byKey(const Key('increment-button'));
+    var decrementButton = find.byKey(const Key('decrement-button'));
 
     expect(find.text('Counter: 0'), findsOneWidget);
     expect(incrementButton, findsOneWidget);
@@ -34,5 +33,4 @@ void main() {
 
     expect(find.text('Counter: 0'), findsOneWidget);
   });
-
 }

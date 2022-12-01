@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
 class SfWidget extends StatefulWidget {
   const SfWidget({super.key});
@@ -42,7 +42,7 @@ class _SfWidgetState extends State<SfWidget> {
                   onPressed: (){
                     _incrementCounter();
                   },
-                  child: const Text("Increment")
+                  child: const Text('Increment')
                 ),
 
                 const SizedBox(width: 10),

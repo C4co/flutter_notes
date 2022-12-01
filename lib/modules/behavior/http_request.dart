@@ -8,6 +8,8 @@ class MyContent extends StatefulWidget {
   State<MyContent> createState() => _MyContentState();
 }
 
+// wrong way to do a request
+
 class _MyContentState extends State<MyContent> {
   String _content = '';
 
