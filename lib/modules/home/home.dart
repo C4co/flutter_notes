@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_notes/modules/behavior/behavior.dart';
 import 'package:flutter_notes/modules/components/components.dart';
-import 'package:flutter_notes/modules/examples/exmaples.dart';
+import 'package:flutter_notes/modules/examples/examples.dart';
 import 'package:flutter_notes/modules/layouts/layout.dart';
 import 'package:flutter_notes/modules/styled/styled.dart';
 
