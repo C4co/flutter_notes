@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notes/modules/examples/animated_container.dart';
 import 'package:flutter_notes/modules/examples/navigation_return_data.dart';
 import 'package:flutter_notes/modules/examples/persist_sqlite.dart';
 import 'package:flutter_notes/modules/examples/route_transition.dart';
@@ -46,9 +47,17 @@ class ExamplesPage extends StatelessWidget {
               listItem(
                 context,
                 'Persist SQLite',
-                'Persiste data wit SQLite',
+                'Persiste data wit SQLite, just work in mobile',
                 Icons.table_chart,
                 const PersistSqlitePage()
+              ),
+
+              listItem(
+                context,
+                'Animated Container',
+                'Animate the properties of a container',
+                Icons.animation,
+                const AnimatedContainerPage()
               ),
 
             ]
